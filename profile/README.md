@@ -4,13 +4,15 @@ Base16384 is a unicode-based encoding scheme that presents binary data (sequence
 
 The famous project [go-cqhttp](https://github.com/Mrs4s/go-cqhttp) has built-in support for this encoding.
 
-## Description
+## Introduction
+
+### Design
 
 Base16384 uses 16384 (2<sup>14</sup>) Chinese characters (from `\u4E00` to `\u8DFF`) to represent binary data.
 
 A `\u3D0x` is added after the output to represent the remainder modulo 7 of the input length.
 
-## Comparison
+### Comparison
 
 |           | Base64          | Base16384         |
 | --------- |:---------------:|:-----------------:|
@@ -19,7 +21,7 @@ A `\u3D0x` is added after the output to represent the remainder modulo 7 of the 
 | Padding   | `=`             | `[\u3D00-\u3D06]` |
 | Example   | `RXhhbXBsZQ==`  | `彞吖菁穥㴀`       |
 
-## Ecosystem
+## Awesome Projects
 
 If you are developing related projects, feel tree to submit a pull request.
 
